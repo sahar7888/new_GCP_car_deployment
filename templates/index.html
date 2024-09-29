@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Detection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            color: #333;
+        }
+        h2 {
+            color: #555;
+        }
+        p {
+            color: #666;
+        }
+        form {
+            margin-top: 20px;
+        }
+        input[type="file"] {
+            margin: 10px 0;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Car Detection Web Application</h1>
+    <h2>Project Description</h2>
+    <p>
+        The Car Detection Web Application is a simple yet powerful tool that utilizes computer vision techniques to identify and detect cars in uploaded images. Built with Flask, a lightweight web framework for Python, this application allows users to upload images and receive real-time feedback on the number of cars detected within the image. It leverages the Haar Cascade Classifier, a popular machine learning object detection method, to accurately identify vehicles in various conditions.
+    </p>
+    <h2>Features</h2>
+    <ul>
+        <li><strong>Image Upload:</strong> Users can easily upload images via a web interface.</li>
+        <li><strong>Car Detection:</strong> The application processes the uploaded images using OpenCV to detect cars and draws bounding boxes around detected vehicles.</li>
+
+
+    </ul>
+    <h2>Upload an Image for Car Detection</h2>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept="image/*" required>
+        <input type="submit" value="Upload">
+    </form>
+</body>
+</html>
